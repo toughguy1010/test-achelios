@@ -285,7 +285,6 @@
 
 .product-price {
     font-size: 16px;
-    font-weight: 600;
     margin-top: 44px;
 }
 
@@ -366,11 +365,12 @@
 }
 
 .guide-btn {
-    right: 30%;
     display: block;
     text-decoration: none;
     color: #000;
-    width: 200px;
+    margin-right: 100px;
+    width: fit-content;
+    text-align: center;
     cursor: default;
 }
 
@@ -423,6 +423,7 @@
 .material {
     margin-top: 35px;
     font-size: 12px;
+    font-weight: 200;
 }
 
 
