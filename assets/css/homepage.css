@@ -59,8 +59,14 @@
     top: 100%;
     left: 0;
     min-width: 100%;
-    padding-left: 128px;
+    padding-left: 158px;
     background-color: #fff;
+}
+
+.child-item a {
+    display: block;
+    text-decoration: none;
+    color: #000;
 }
 
 .dropdown-item-title {
