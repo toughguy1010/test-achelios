@@ -21,23 +21,19 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 60px;
     width: 100%;
-    height: 57px;
-    background-color: rgba(255, 255, 255, .9);
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 600;
     position: fixed;
 }
 
 .nav-item {
-    margin-right: 50px;
+    margin-right: 34px;
     display: flex;
     height: 100%;
     align-items: center;
-}
-
-.active-nav-item {
-    color: #CE8C91 !important;
 }
 
 .dropdown-btn {
@@ -62,12 +58,12 @@
     top: 100%;
     left: 0;
     min-width: 100%;
-    padding-left: 130px;
+    padding-left: 128px;
     background-color: #fff;
 }
 
 .dropdown-item-title {
-    min-width: 72px;
+    min-width: 75px;
     cursor: pointer;
     z-index: 600;
 }
@@ -114,6 +110,8 @@
     font-size: 11px;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
+    padding: 0 !important;
+    min-width: 65px;
 }
 
 .nav-link:hover {
@@ -190,16 +188,18 @@
 .search-btn {
     z-index: 600;
     position: relative;
+    /* padding: 5px 0px; */
 }
 
 .search-btn:hover {
     background-color: #fff;
+    /* padding-right: 12px;  */
 }
 
 .search-input {
     position: absolute;
     transition: all .1s;
-    right: 16px;
+    right: 15px;
     height: 100%;
     border: none;
     width: 0px;
@@ -207,6 +207,15 @@
 
 .search-btn:hover .search-input {
     width: 200px;
+    padding-left: 20px;
+}
+
+.bag-icon {
+    width: 12px;
+}
+
+.search-icon {
+    width: 15px;
 }
 
 
@@ -220,33 +229,36 @@
 /* content css */
 
 .content-wrapper {
-    padding-top: calc(91px + 57px);
+    padding-top: calc(91px + 75px);
+    margin-left: 5%;
+    text-align: center;
+    width: 100%;
 }
 
 .content-btn {
-    margin-left: 39px;
     font-size: 12px;
     margin-bottom: 36px;
 }
 
 .product-content {
-    margin-left: 34px;
+    /* margin-left: 34px; */
     display: flex;
     justify-content: space-between;
     font-size: 12px;
 }
 
 .product-price {
-    margin-right: 35px;
+    /* margin-right: 35px; */
 }
 
 
 /* img treatment */
 
 .product-item {
-    width: calc(100%/3);
-    height: 734px;
+    min-width: 442px;
+    height: 764px;
     margin-bottom: 156px;
+    margin-right: 2%;
 }
 
 .product {
@@ -256,7 +268,7 @@
 
 .item-img {
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -408,15 +420,14 @@
 /* footer css */
 
 .footer {
-    margin-top: 90px;
-    margin-bottom: 44px;
+    margin: 90px 0 40px 0;
     width: 100%;
     text-align: center;
 }
 
 .footer-line {
     margin: 20px auto;
-    width: 8.5%;
+    width: 10%;
 }
 
 .footer-line-respon {
@@ -425,21 +436,25 @@
 
 .footer-content {
     display: flex;
-    justify-content: center;
-    font-size: 9px;
-    margin: 0 300px;
+    justify-content: space-around;
+    font-size: 14px;
+    width: 100%;
+    margin: 0 0px;
 }
 
 .footer-content ul {
     list-style-type: none;
-    width: calc(100%/3);
+    width: 20%;
     padding-left: 0 !important;
     margin-bottom: 0;
+    margin-top: 38px;
+    /* margin-left: 200px;
+    margin-right: 200px; */
 }
 
 .line {
     content: ' ';
-    width: 85%;
+    width: 100%;
     height: 1px;
     text-align: center;
     background-color: #000;
@@ -448,7 +463,7 @@
 .social {
     display: flex;
     justify-content: center;
-    width: 25px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -456,13 +471,58 @@
 .social a {
     text-decoration: none;
     display: block;
-    /* width: 2%; */
 }
 
-.social a img {
-    width: 100%;
+.social a i {
+    font-size: 14px;
+    color: #000;
 }
 
 .hide-element {
     visibility: hidden;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 1300px) {
+    .content-wrapper {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content-wrapper {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .content-wrapper {
+        margin-left: 6%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .content-wrapper {
+        margin-left: 8%;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .content-wrapper {
+        margin-left: 9%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .content-wrapper {
+        margin-left: 13%;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .content-wrapper {
+        margin-left: 3%;
+    }
 }
